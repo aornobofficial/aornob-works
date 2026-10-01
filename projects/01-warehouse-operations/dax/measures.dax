@@ -1,0 +1,8 @@
+Orders = DISTINCTCOUNT(WarehouseOrders[OrderID])
+Order Value = SUM(WarehouseOrders[OrderValueEUR])
+Average Pick Minutes = AVERAGE(WarehouseOrders[PickMinutes])
+Complete Picks = CALCULATE(COUNTROWS(WarehouseOrders), WarehouseOrders[PickedQty] >= WarehouseOrders[OrderedQty])
+On-Time Orders = CALCULATE(COUNTROWS(WarehouseOrders), WarehouseOrders[ActualDeliveryDate] <= WarehouseOrders[PromisedDate])
+OTIF Orders = CALCULATE(COUNTROWS(WarehouseOrders), WarehouseOrders[ActualDeliveryDate] <= WarehouseOrders[PromisedDate], WarehouseOrders[PickedQty] >= WarehouseOrders[OrderedQty])
+OTIF % = DIVIDE([OTIF Orders], [Orders])
+Average Dock Wait = AVERAGE(WarehouseOrders[DockWaitMinutes])

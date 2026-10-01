@@ -1,0 +1,10 @@
+Trips = DISTINCTCOUNT(DeliveryRoutes[TripID])
+On-Time Trips = CALCULATE([Trips], DeliveryRoutes[ActualMinutes] <= DeliveryRoutes[PlannedMinutes])
+On-Time Rate = DIVIDE([On-Time Trips], [Trips])
+Total Trip Cost = SUM(DeliveryRoutes[TripCostEUR])
+Stops = SUM(DeliveryRoutes[Stops])
+Cost per Stop = DIVIDE([Total Trip Cost], [Stops])
+Failed Deliveries = SUM(DeliveryRoutes[FailedDeliveries])
+Failure Rate per Stop = DIVIDE([Failed Deliveries], [Stops])
+Fuel per 100 km = DIVIDE(SUM(DeliveryRoutes[FuelLitres]), SUM(DeliveryRoutes[DistanceKm])) * 100
+Average Delay Minutes = AVERAGEX(FILTER(DeliveryRoutes, DeliveryRoutes[ActualMinutes] > DeliveryRoutes[PlannedMinutes]), DeliveryRoutes[ActualMinutes] - DeliveryRoutes[PlannedMinutes])

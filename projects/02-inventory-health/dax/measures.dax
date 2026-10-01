@@ -1,0 +1,8 @@
+Snapshot Rows = COUNTROWS(InventorySnapshot)
+On-Hand Units = SUM(InventorySnapshot[OnHandUnits])
+Inventory Value = SUMX(InventorySnapshot, InventorySnapshot[OnHandUnits] * InventorySnapshot[UnitCostEUR])
+Below Reorder Rows = CALCULATE(COUNTROWS(InventorySnapshot), InventorySnapshot[OnHandUnits] < InventorySnapshot[ReorderPointUnits])
+Below Reorder % = DIVIDE([Below Reorder Rows], [Snapshot Rows])
+Aged Stock Value = CALCULATE([Inventory Value], InventorySnapshot[InventoryAgeDays] > 120)
+Days of Supply = DIVIDE([On-Hand Units], SUM(InventorySnapshot[AvgDailyDemand]))
+Replenishment Gap Units = SUMX(InventorySnapshot, MAX(0, InventorySnapshot[ReorderPointUnits] - InventorySnapshot[OnHandUnits]))

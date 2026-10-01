@@ -1,0 +1,14 @@
+{
+  "name": "Nordic Operations",
+  "dataColors": [
+    "#17BEBB",
+    "#4C78A8",
+    "#F2A541",
+    "#E45756",
+    "#72B7B2",
+    "#B279A2"
+  ],
+  "background": "#F5F7FA",
+  "foreground": "#1F2937",
+  "tableAccent": "#17BEBB"
+}
