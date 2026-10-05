@@ -23,7 +23,7 @@ A Power BI-ready, glassmorphism-style attendance portfolio dashboard built entir
 
 ## Main KPIs
 
-Attendance Rate, Active Employees, Present Records, Absent Records, Leave Records, Late Records, Working Days, Average Work Hours, Absence Rate, Leave Rate, and Supervisor/Department attendance comparison.
+Attendance Rate, Active Employees, Present (including late) Records, Absent Records, Leave Records, Late Records, Working Days, Average Work Hours, Absence Rate, Leave Rate, and Supervisor/Department attendance comparison.
 
 ## Power BI note
 
