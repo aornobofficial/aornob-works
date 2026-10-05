@@ -1,0 +1,21 @@
+Attendance Rate = DIVIDE([Present Records], [Scheduled Records])
+
+Scheduled Records = SUM(Attendance[Scheduled])
+Present Records = SUM(Attendance[Present])
+Absent Records = SUM(Attendance[Absent])
+Leave Records = SUM(Attendance[Leave])
+Late Records = SUM(Attendance[Late])
+Absence Rate = DIVIDE([Absent Records], [Scheduled Records])
+Leave Rate = DIVIDE([Leave Records], [Scheduled Records])
+Average Work Hours = AVERAGE(Attendance[WorkHours])
+Average Late Minutes = AVERAGE(Attendance[LateMinutes])
+Working Days = CALCULATE(DISTINCTCOUNT(Attendance[Date]), Attendance[Scheduled] = 1)
+Active Employees = DISTINCTCOUNT(Attendance[EmployeeID])
+
+Attendance Status =
+SWITCH(TRUE(),
+    SELECTEDVALUE(Attendance[Status]) = "Present", "Present",
+    SELECTEDVALUE(Attendance[Status]) = "Late", "Late",
+    SELECTEDVALUE(Attendance[Status]) = "Absent", "Absent",
+    SELECTEDVALUE(Attendance[Status]) = "Leave", "Leave",
+    "Off")

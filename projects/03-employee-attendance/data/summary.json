@@ -1,0 +1,337 @@
+{
+  "synthetic": true,
+  "rows": 43840,
+  "employees": 40,
+  "scheduled": 30800,
+  "present": 27952,
+  "absent": 1270,
+  "leave": 1578,
+  "late": 617,
+  "attendance_rate": 90.8,
+  "absence_rate": 4.1,
+  "leave_rate": 5.1,
+  "monthly": [
+    {
+      "period": "2024-01",
+      "present": 807,
+      "absent": 29,
+      "leave": 44,
+      "late": 19,
+      "scheduled": 880
+    },
+    {
+      "period": "2024-02",
+      "present": 758,
+      "absent": 36,
+      "leave": 46,
+      "late": 11,
+      "scheduled": 840
+    },
+    {
+      "period": "2024-03",
+      "present": 765,
+      "absent": 37,
+      "leave": 38,
+      "late": 15,
+      "scheduled": 840
+    },
+    {
+      "period": "2024-04",
+      "present": 781,
+      "absent": 44,
+      "leave": 55,
+      "late": 15,
+      "scheduled": 880
+    },
+    {
+      "period": "2024-05",
+      "present": 833,
+      "absent": 38,
+      "leave": 49,
+      "late": 19,
+      "scheduled": 920
+    },
+    {
+      "period": "2024-06",
+      "present": 736,
+      "absent": 23,
+      "leave": 41,
+      "late": 10,
+      "scheduled": 800
+    },
+    {
+      "period": "2024-07",
+      "present": 835,
+      "absent": 45,
+      "leave": 40,
+      "late": 16,
+      "scheduled": 920
+    },
+    {
+      "period": "2024-08",
+      "present": 786,
+      "absent": 41,
+      "leave": 53,
+      "late": 17,
+      "scheduled": 880
+    },
+    {
+      "period": "2024-09",
+      "present": 768,
+      "absent": 40,
+      "leave": 32,
+      "late": 19,
+      "scheduled": 840
+    },
+    {
+      "period": "2024-10",
+      "present": 827,
+      "absent": 34,
+      "leave": 59,
+      "late": 14,
+      "scheduled": 920
+    },
+    {
+      "period": "2024-11",
+      "present": 773,
+      "absent": 33,
+      "leave": 34,
+      "late": 12,
+      "scheduled": 840
+    },
+    {
+      "period": "2024-12",
+      "present": 644,
+      "absent": 32,
+      "leave": 44,
+      "late": 10,
+      "scheduled": 720
+    },
+    {
+      "period": "2025-01",
+      "present": 806,
+      "absent": 35,
+      "leave": 39,
+      "late": 17,
+      "scheduled": 880
+    },
+    {
+      "period": "2025-02",
+      "present": 727,
+      "absent": 33,
+      "leave": 40,
+      "late": 14,
+      "scheduled": 800
+    },
+    {
+      "period": "2025-03",
+      "present": 773,
+      "absent": 28,
+      "leave": 39,
+      "late": 15,
+      "scheduled": 840
+    },
+    {
+      "period": "2025-04",
+      "present": 793,
+      "absent": 43,
+      "leave": 44,
+      "late": 22,
+      "scheduled": 880
+    },
+    {
+      "period": "2025-05",
+      "present": 801,
+      "absent": 36,
+      "leave": 43,
+      "late": 16,
+      "scheduled": 880
+    },
+    {
+      "period": "2025-06",
+      "present": 766,
+      "absent": 31,
+      "leave": 43,
+      "late": 22,
+      "scheduled": 840
+    },
+    {
+      "period": "2025-07",
+      "present": 830,
+      "absent": 37,
+      "leave": 53,
+      "late": 21,
+      "scheduled": 920
+    },
+    {
+      "period": "2025-08",
+      "present": 776,
+      "absent": 33,
+      "leave": 31,
+      "late": 20,
+      "scheduled": 840
+    },
+    {
+      "period": "2025-09",
+      "present": 800,
+      "absent": 33,
+      "leave": 47,
+      "late": 11,
+      "scheduled": 880
+    },
+    {
+      "period": "2025-10",
+      "present": 823,
+      "absent": 44,
+      "leave": 53,
+      "late": 16,
+      "scheduled": 920
+    },
+    {
+      "period": "2025-11",
+      "present": 728,
+      "absent": 39,
+      "leave": 33,
+      "late": 22,
+      "scheduled": 800
+    },
+    {
+      "period": "2025-12",
+      "present": 685,
+      "absent": 30,
+      "leave": 45,
+      "late": 12,
+      "scheduled": 760
+    },
+    {
+      "period": "2026-01",
+      "present": 770,
+      "absent": 26,
+      "leave": 44,
+      "late": 22,
+      "scheduled": 840
+    },
+    {
+      "period": "2026-02",
+      "present": 719,
+      "absent": 35,
+      "leave": 46,
+      "late": 14,
+      "scheduled": 800
+    },
+    {
+      "period": "2026-03",
+      "present": 804,
+      "absent": 28,
+      "leave": 48,
+      "late": 14,
+      "scheduled": 880
+    },
+    {
+      "period": "2026-04",
+      "present": 795,
+      "absent": 36,
+      "leave": 49,
+      "late": 23,
+      "scheduled": 880
+    },
+    {
+      "period": "2026-05",
+      "present": 770,
+      "absent": 35,
+      "leave": 35,
+      "late": 17,
+      "scheduled": 840
+    },
+    {
+      "period": "2026-06",
+      "present": 794,
+      "absent": 35,
+      "leave": 51,
+      "late": 18,
+      "scheduled": 880
+    },
+    {
+      "period": "2026-07",
+      "present": 842,
+      "absent": 39,
+      "leave": 39,
+      "late": 26,
+      "scheduled": 920
+    },
+    {
+      "period": "2026-08",
+      "present": 758,
+      "absent": 31,
+      "leave": 51,
+      "late": 24,
+      "scheduled": 840
+    },
+    {
+      "period": "2026-09",
+      "present": 808,
+      "absent": 30,
+      "leave": 42,
+      "late": 19,
+      "scheduled": 880
+    },
+    {
+      "period": "2026-10",
+      "present": 783,
+      "absent": 47,
+      "leave": 50,
+      "late": 19,
+      "scheduled": 880
+    },
+    {
+      "period": "2026-11",
+      "present": 763,
+      "absent": 36,
+      "leave": 41,
+      "late": 18,
+      "scheduled": 840
+    },
+    {
+      "period": "2026-12",
+      "present": 725,
+      "absent": 38,
+      "leave": 37,
+      "late": 18,
+      "scheduled": 800
+    }
+  ],
+  "departments": [
+    {
+      "name": "Customer Service",
+      "present": 6988,
+      "absent": 329,
+      "leave": 383,
+      "scheduled": 7700,
+      "rate": 90.8
+    },
+    {
+      "name": "Operations",
+      "present": 7000,
+      "absent": 329,
+      "leave": 371,
+      "scheduled": 7700,
+      "rate": 90.9
+    },
+    {
+      "name": "Transport",
+      "present": 6978,
+      "absent": 309,
+      "leave": 413,
+      "scheduled": 7700,
+      "rate": 90.6
+    },
+    {
+      "name": "Warehouse",
+      "present": 6986,
+      "absent": 303,
+      "leave": 411,
+      "scheduled": 7700,
+      "rate": 90.7
+    }
+  ]
+}
