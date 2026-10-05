@@ -8,13 +8,11 @@ root = Path(__file__).resolve().parents[1]
 out = root / 'data' / 'attendance_2024_2026.csv'
 out.parent.mkdir(parents=True, exist_ok=True)
 people = []
-first = ['Alex','Mia','Noah','Emma','Oliver','Ava','Leo','Ella','Elias','Sofia','Liam','Nora','Milan','Iris','Daniel','Lina','Oskar','Sara','Jonas','Alma','Elliot','Freja','Lucas','Ida','Theo','Clara','Hugo','Aino','Anton','Elsa','Emil','Liv','Felix','Selma','Adam','Ella','Matti','Olivia','Aron','Mila']
-last = ['Berg','Niemi','Virtanen','Laine','Saarinen','Koskinen','Heikkinen','Mäkinen','Lehtonen','Korhonen']
 departments = ['Operations','Warehouse','Customer Service','Transport']
-supervisors = ['S. Bradost','J. Oravasaari','M. Nieminen','A. Virtanen']
+supervisors = [f'Supervisor {i:02d}' for i in range(1,5)]
 shifts = ['Morning','Evening','Night']
 for i in range(40):
-    people.append((f'E{i+1:03d}', f'{first[i]} {last[i%len(last)]}', departments[i%4], supervisors[i%4], shifts[i%3]))
+    people.append((f'E{i+1:03d}', f'Employee E{i+1:03d}', departments[i%4], supervisors[i%4], shifts[i%3]))
 start, end = date(2024,1,1), date(2026,12,31)
 rows=[]
 d = start
